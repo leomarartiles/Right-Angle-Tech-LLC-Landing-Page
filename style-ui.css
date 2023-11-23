@@ -1,0 +1,64 @@
+body.portfolio{
+    background: aliceblue;;
+}
+header .logo{
+    /* font-size: 2.5rem; */
+    color: #fff;
+    font-weight: bolder;
+    height: 85px;
+    width: auto;
+}
+
+header .navbar a {
+    color: #f11212;
+}
+#menu-bar{
+    color: #342f2f;
+}
+header{
+    background: #fff;
+}
+
+.team .box-container .box-packages{
+    width:45%;
+    padding: 30px;
+}
+.team .box-container .box-packages h3{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.packages-price{
+    color: #f11212;
+}
+.packages-list{
+    list-style: none;
+    text-align: left;
+    margin-top: 15px;
+}
+.packages-list li{
+    padding: 3px 4px;
+    font-size: 14px;
+}
+.packages-list li::before{
+    content: " ";
+    height: 8px;
+    width: 8px;
+    display: block;
+    float: left;
+    background: #db4848;
+    margin-right: 6px;
+    margin-top: 3px;
+    border-radius: 13px;
+}
+.step .step-num{
+    background: #db4848;
+    position: absolute;
+    margin-top: -68px;
+    padding: 10px;
+    border-radius: 9px;
+}
+.step .step-num span{
+    color: #fff;
+    text-align: center;
+    font-size: 6rem;
+}
