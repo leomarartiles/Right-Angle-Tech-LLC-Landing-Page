@@ -1,0 +1,321 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700 &family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+    .blacnhe {
+        background-color: rgba(225, 181, 169, 0.591);
+        border-style: solid;
+        border: 1px;
+        border-color: burlywood;
+        font-family: monospace;
+        color: rgb(48, 38, 24);
+       
+    }
+
+    header {
+        height: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-top: 1%;
+    }
+
+    .nav>li:hover {
+        color: red;
+    }
+
+    .nav > li {
+        list-style: none;
+        cursor: pointer;
+        padding: 1%;
+    }
+
+    .nav>li:nth-child(2) {
+        font-weight: 600;
+
+
+    }
+
+    .nav>li:nth-child(3) {
+        font-weight: 600;
+    }
+
+    .nav>li:nth-child(6) {
+        font-size: 20px;
+        color: gray;
+
+    }
+
+    .nav>li:nth-child(6):hover {
+        color: red;
+    }
+
+    .search {
+        width: 70%;
+        position: relative;
+        padding: 1%;
+
+    }
+
+    .search > input {
+
+        border: 0;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: -5px;
+        padding: 1%;
+        background-color: rgba(128, 128, 128, 0.212);
+
+    }
+
+    .search>input:focus {
+        outline: none;
+    }
+
+
+    .notification i {
+        font-size: 20px;
+
+        color: gray;
+        margin-top: 5px;
+
+    }
+
+    .notification i:hover {
+        color: rgba(0, 17, 255, 0.733);
+    }
+
+
+    .profile img {
+        object-fit: cover;
+
+        border-radius: 50%;
+    }
+
+    /* <!-- --------------------nav End -------------------- --> */
+
+    .container {
+
+        width: auto;
+        margin-top: 70px;
+       display: flex;
+       flex-direction:row;
+
+    }
+
+    .container > div {
+        padding: 0;
+        margin: 15px 10px;
+        border-radius: 20px;
+
+    }
+
+    .card > iframe {
+        border-radius: 25px;
+    }
+
+    .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card_small {
+        grid-row-end: span 26;
+    }
+
+    .card_midium {
+        grid-row-end: span 33;
+    }
+
+    .card_large {
+        grid-row-end: span 40;
+    }
+
+
+    @media all and(min-width: 421px) and(max-width: 768px) {
+        .container {
+            grid-template-columns: repeat(auto-fill, 200px);
+        }
+
+        .search {
+            display: none;
+        }
+
+        .nav>li:nth-child(2) {
+            font-weight: 500;
+            font-size: 15px;
+
+        }
+    }
+
+
+    @media all and(min-width:50px) and(max-width: 420px) {
+        .container {
+            grid-template-columns: repeat(auto-fill, 150px);
+        }
+
+        .container > div {
+            padding: 0;
+            margin: 8px 5px;
+            border-radius: 20px;
+
+        }
+
+        .nav {
+            padding: 2%;
+        }
+
+        .search > input {
+            /* display: none; */
+            padding: 3%;
+        }
+
+        .nav > li > img {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        .nav > li {
+            font-size: 12px;
+
+        }
+
+        .nav > li i {
+            display: none;
+
+        }
+
+        .nav>li:nth-child(2) {
+            display: none;
+
+        }
+
+        .nav>li:nth-child(3) {
+            display: none;
+
+        }
+
+        .card > iframe {
+            border-radius: 25px;
+        }
+
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Big Apple Photographers NewYork & NewJersey</title>
+                    <link rel="stylesheet" href="style.css">
+                        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"></head>
+
+                        <body>
+
+                            <header>
+
+                                <a href="https://bigapplephotgraphers.netlify.app/index.html" class="logo">Big Apple Photographers
+                                </a>
+
+
+                                <nav class="navbar">
+                                    <div class="share"></div>
+                                    <a href="https://bigapplephotgraphers.netlify.app/index.html">home</a>
+                                    <a href="#contact">contact</a>
+
+                                </nav>
+
+                            </header>
+
+
+                            <!-- --------------------nav End -------------------- -->
+
+                            <div class="container">
+                                <div>
+
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KLNtSG_v33w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h1 class="blacnhe" style=" border-radius: 3px;  width:560;  height:70 ">
+                                        Two love birds, one solemn promise, and one cameraman capture the essence of true friendship and love.
+                                                        Film at The Manor House in Ambler, Pennsylvania.
+                                    </h1>
+                                </div>
+                                <div>
+
+
+                                    <iframe height="315" width="560" frameborder="0" scrolling="no" allow='autoplay' src="https://www.youtube.com/embed/tvmzhUyTfTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <h1 class="blacnhe" style="width:560 ; height:170">Video Packages, with camera professionals to operate beautiful motion 6k pictures. Footage filmed in Glen falls NewYork. A gorgeous waterfall visible from the parking lot of the hotel next door, a tranquil site for wedding pictures and videos! Must check out if around the area.
+                                </h1>
+                                </div>
+                               
+
+                           
+                            </div>
+
+
+
+                            <div class="container">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lPRldFHmHhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h1 class="blacnhe" style="width:560 ; height:200 ">
+                                        90% of our footage is approve in any Netflix project we make.   Our classical rule is to have our attention with multiple camera operators for close-up, medium shots, long shots, preoperative lighting set-up, and great audio even in low-budget film production. If you have a strong message,we want you to stand out above all. Check out the steller comedy stand-up / documentary from Clayton Prince's untold story, notable notable figure in the film and TV industry.
+                                    </h1>
+                                </div>
+                                <div>
+
+
+                                    <iframe width="560" height="325" src="https://www.youtube.com/embed/v5il69MDq7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                                <h1 class="blacnhe" style="width:560 ; height:120">   Aerial videos provide a better understanding of what the property actually looks like, its dimensions
+                                    and size, and the surrounding area. See for yourself, check out the dream-style mansion in the heart of
+                                    Raritan Valley, built to its Highest Standards. Lush garden view film in 4k
+                                </h1>
+                                </div>
+                               
+
+                           
+                            </div>
+
+
+
+
+                            <div class="container">
+                                <div>
+                                    <iframe height="315" width="560" src="https://www.youtube.com/embed/duIZM8UoKSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                                    <h1 class="blacnhe" style="width:560 ; height:70 ">
+                                        Your ceremony is suitable for a cinematic touch, film in 6k. We love to get involved with range of different social and ethnic backgrounds.
+                                    </h1>
+                                </div>
+                                <div>
+
+
+                                    <iframe height="315" width="560" src="https://www.youtube.com/embed/jt_HlehLbls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                                <h1 class="blacnhe" style="width:560 ; height:70">   
+                                    Sports videography proficiency, audio, and animation editing techniques with Adobe Creative Cloud software.</h1>
+
+                                </h1>
+                                </div>
+                               
+
+                           
+                            </div>
+
+                            

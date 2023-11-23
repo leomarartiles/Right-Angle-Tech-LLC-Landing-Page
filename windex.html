@@ -1,0 +1,343 @@
+<style> 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+header{
+  height: 30px;
+  margin-bottom: 40px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 1%;
+}
+.nav > li:hover{
+    color: red;
+}
+.nav > li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.nav > li:nth-child(2){
+    font-weight: 600;
+
+    
+}
+.nav > li:nth-child(3){
+    font-weight: 600;       
+}
+
+.nav > li:nth-child(6){
+    font-size: 20px;
+    color: gray; 
+
+}
+.nav > li:nth-child(6):hover{
+    color: red;
+}
+.search{   
+    width: 70%;
+    position: relative;
+    padding: 1%;
+    
+}
+.search > input{
+    
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -5px;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.212);
+    
+}
+.search > input:focus{
+    outline: none;
+}
+
+
+.notification i{
+    font-size: 20px;
+    
+    color: gray;
+    margin-top: 5px;
+
+}
+.notification i:hover{
+    color: rgba(0, 17, 255, 0.733);
+}
+
+
+.profile img{
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+/* <!-- --------------------nav End -------------------- --> */
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+    /* gap: 1%; */
+    /* margin: 2%; */
+
+}
+.container > div{
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: 20px;
+
+}
+.card > iframe{
+    border-radius:25px ;
+}
+.container  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card_small{
+    grid-row-end: span 26;
+}
+.card_midium{
+    grid-row-end: span 33;
+}
+.card_large{
+    grid-row-end: span 40;
+}
+
+
+@media all and(min-width: 421px) and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(auto-fill,200px);
+    }
+    .search{
+        display: none;
+    }
+    .nav > li:nth-child(2){
+        font-weight: 500;
+        font-size: 15px;
+        
+    }
+}
+
+@media all and (min-width:50px) and (max-width: 420px){
+    .container{
+        grid-template-columns: repeat(auto-fill,150px);
+    }
+    .container > div{
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
+    
+    }
+    .nav{
+        padding: 2%;
+    }
+    .search > input{
+        /* display: none; */
+        padding: 3%;
+    }
+    .nav > li>img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .nav > li {
+        font-size: 12px;
+        
+    }
+    .nav > li i{
+        display: none;
+        
+    }
+    .nav > li:nth-child(2){
+        display: none;
+        
+    }
+    .nav > li:nth-child(3){
+        display: none;
+        
+    }
+    .card > iframe{
+        border-radius:25px ;
+    }
+
+}
+    
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Apple Photographers NewYork & NewJersey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+   
+<header>
+
+  <a   href="https://bigapplephotgraphers.netlify.app/index.html" class="logo">Big Apple Photographer </a>
+
+ 
+
+  <nav class="navbar">
+    <div class="share">
+    </div>
+    <a href="https://bigapplephotgraphers.netlify.app/index.html">home</a>
+    <a href="#contact">contact</a>
+ 
+</nav>
+
+</header>
+
+
+   
+    <!-- --------------------nav End -------------------- -->
+
+    <div class="container">
+        <div class="card card_small">
+          <img alt="Newjersey Wedding" src="./images/products/product1.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div> 
+
+        <div class="card card_large">
+          <img alt="Newyorkcity Wedding" src="./images/products/product2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img  alt ="Newyork Wedding" src="./images/products/product12.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        
+        </div>
+        <div class=" card_small">
+            
+
+      
+        </div>
+        
+        <div class="card card_midium">
+          <img alt="Newjersey Weddings" src="./images/products/product3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img alt="The Peninsula Hotel Midtown Weddings" src="./images/products/midtown.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img alt="NewJersey Weddings" src="./images/products/banner2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img  src="./images/products/product9.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <img  src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img src="./images/products/product44.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+
+        <div class="card card_small">
+          <img src="./images/products/product8.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/product7.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        
+  
+        <div class="card card_small">
+          <img src="./images/products/product5.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img alt="NewJersey Weddings" src="./images/products/banner.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img src="./images/products/banner13.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+      
+        <div class="card card_small">
+          <img alt="New Jersey Wedding" src="./images/products/banner3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <img alt="New Jersey Weddings" src="./images/products/product33.png" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <img alt="NewJersey Newlywed" src="./images/products/product120.png" class=" image rounded-tl-lg rounded-tr-lg" />
+        
+        </div>
+        <div class="card card_small">
+          <img alt="Newjersey Wedding" src="./images/products/venueparty.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div> 
+
+      <!-- <div class="card card_large">
+        <iframe src="https://assets.pinterest.com/ext/embed.html?id=872431759037250552"  height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+        </div> -->
+        
+
+            <div class="card card_small">
+      <img alt="NewJersey New born photography " src="./images/products/njnycbabyphotos.jpg"  height="150" class=" image rounded-tl-lg rounded-tr-lg" />
+    
+    </div>
+        <div class="card card_small"> <img src="./images/products/product22.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img alt="Newyork Weddings"src="./images/products/product23.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img alt="NewJersey Wedding" src="./images/products/product24.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img alt="Raritan Wedding"src="./images/products/product59.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+ 
+        <div class="card card_large">
+          <img src="./images/products/product26.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          
+          <img alt="New Jersey Indian Wedding" src="./images/products/product28.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/product101.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+      
+                <div class="card card_small">
+          <iframe width="200" height="200" src="https://www.youtube.com/embed/duIZM8UoKSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+ 
+     </div>
+ 
+     
+ 
+        <!-- <div class="card card_small">
+          <iframe width="200" height="200" src="https://www.youtube.com/embed/tYSwokw14uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+
+</body>
+</html>
+
+<!-- <div class="card card_small">
+  <iframe width="150" height="245" src="./images/products/njnycbabyphotos.jpg" class=" image rounded-tl-lg rounded-tr-lg frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->

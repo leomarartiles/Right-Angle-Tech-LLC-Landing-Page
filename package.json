@@ -1,0 +1,23 @@
+{
+  "name": "wedding-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abemm7787/Wedding-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abemm7787/Wedding-Website/issues"
+  },
+  "homepage": "https://github.com/abemm7787/Wedding-Website#readme",
+  "dependencies": {
+    "googleapis": "^104.0.0"
+  }
+}
